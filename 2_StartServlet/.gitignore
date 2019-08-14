@@ -13,3 +13,4 @@ gradlew
 .bat
 /gradle/
 /.settings/
+/src/test/
