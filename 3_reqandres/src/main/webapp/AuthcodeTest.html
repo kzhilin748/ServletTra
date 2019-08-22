@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>驗證卡測試</title>
+    </head>
+    <body>
+        <p><label class="lbright">驗證碼：</label>
+            <span>
+            <input type="text" name="validcode" style="width:70px; vertical-align:middle;" id="validcode"/>
+            <img id="codePic" src="http://localhost:8080/3_reqandres/getAuthCode" width="150" height="25"/> 
+            </span> 
+            <a class="blurry" id="newPic" onclick="getPic();">看不清楚，換一張</a>
+            </p> 
+    </body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/Javascript">
+    function getPic(){ 
+    $("#codePic").attr("src","http://localhost:8080/3_reqandres/getAuthCode?flag="+Math.random()).load(function(){alert('Image Loaded');});
+    };
+</script>

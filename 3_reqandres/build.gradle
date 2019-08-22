@@ -41,3 +41,4 @@ tomcat {
 
 // Define the main class for the application
 //mainClassName = 'Req_Rep.App'
+mainClassName = '...'
