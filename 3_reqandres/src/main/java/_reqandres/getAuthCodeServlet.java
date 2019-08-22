@@ -16,11 +16,8 @@ public class getAuthCodeServlet extends HttpServlet {
 			throws ServletException, IOException {
          AuthImgCreater A=new AuthImgCreater();
 		 String authCode = A.getAuthcode();  
-         
-	        request.getSession().setAttribute("authCode", authCode);    //将验证码保存到session中，便于以后验证  
 	          
 	        try {  
-	            //发送图片  
                 ImageIO.write(A.getSuthImg(authCode), "JPEG", response.getOutputStream()); 
                 //ImageIO.write(A.getSuthImg(authCode),"JPEG",new File("gray11.jpg"));  
 	        } catch (IOException e){  

@@ -37,7 +37,7 @@ public class AuthImgCreater{
     */
     public BufferedImage  getSuthImg(String Authstring){
         //設定圖片長寬高跟ＲＧＢ編碼
-        BufferedImage img=new BufferedImage(Img_Width,EACHCODE_Height,BufferedImage.TYPE_3BYTE_BGR);
+        BufferedImage img=new BufferedImage(Img_Width,(int)(1.5*EACHCODE_Height),BufferedImage.TYPE_3BYTE_BGR);
         //取得ＩＭＧ的畫筆
         Graphics canvas=img.getGraphics();
         //設定背景色
@@ -47,7 +47,7 @@ public class AuthImgCreater{
         //設定畫筆顏色用來寫字
         canvas.setColor(Color.white);
         canvas.setFont(new Font("宋体", Font.PLAIN, EACHCODE_Height + 5));
-        int codeshift=0;
+        int codeshift=0;    //字母位移
         for(char tmp: Authstring.toCharArray()){
             canvas.drawString(tmp+"", codeshift*(EACHCODE_Wid+GAP), Img_Height);
             codeshift++;

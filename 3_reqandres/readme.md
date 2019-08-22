@@ -7,3 +7,5 @@
 可以圖案能正常刷新
 
 <img src="./ＡuthImg.png" style="zoom:70%" />
+
+>生成圖片的方法在AuthImgCreater.java中
