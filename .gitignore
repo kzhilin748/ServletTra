@@ -1,4 +1,4 @@
-.gradle
-.vscode
-.DS_Store
-.project
+/.gradle
+/.vscode
+/.DS_Store
+/.project
