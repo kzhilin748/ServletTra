@@ -8,4 +8,4 @@
 
 <img src="./ＡuthImg.png" style="zoom:70%" />
 
->生成圖片的方法在AuthImgCreater.java中
+>驗證碼生成模組AuthImgCreater.java
